@@ -1,0 +1,38 @@
+@import url('normalize.css');
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main";
+}
+
+header{
+    grid-area: header;
+}
+
+section{
+    grid-area: sidebar;
+}
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+    "project announcements"
+    "project trending";
+}
+
+.your-projects{
+    grid-area: project;
+}
+
+.announcements{
+    grid-area: announcements;
+}
+
+.trending{
+    grid-area: trending;
+}
