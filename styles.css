@@ -178,6 +178,7 @@ main{
     }
 }
 
+
 .cards-container-project{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
@@ -189,6 +190,8 @@ main{
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    padding-left: 2rem;
+    position: relative;
     gap: 2rem;
     justify-content: space-between;
     background-color: #fff;
@@ -211,6 +214,18 @@ main{
 
     }
 
+}
+
+.project-card::after{
+    content: "";
+    display: block;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0.5rem;
+    border-radius: 8px 0 0 8px;
 }
 
 .cards-container-announcements{
